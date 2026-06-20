@@ -18,9 +18,7 @@
 - [Fluxo Completo de Deploy](#-8-fluxo-completo-de-deploy)
 - [Resolução de Problemas](#-9-resolução-de-problemas)
 - [Referências](#-10-referências)
-
 ---
-
 ## 📖 1. História e Motivação
 
 ### A Era de Ouro do PowerPC
