@@ -9,11 +9,23 @@ Este repositório contém a infraestrutura e a documentação metodológica para
 ### A Era de Ouro do PowerPC
 No início dos anos 2000, a arquitetura RISC PowerPC (desenvolvida pela aliança AIM: Apple, IBM e Motorola) representava o topo do desempenho computacional, superando os processadores x86 da época em processamento por ciclo de clock. O PowerBook G4 de alumínio foi um marco da engenharia, unindo design industrial sofisticado e alta capacidade de processamento. Contudo, em 2006, a Apple migrou para a arquitetura Intel, deixando essa geração histórica de hardware relegada ao esquecimento de software proprietário estagnado no Mac OS X 10.5 (Leopard).
 
+### A Era de Ouro do PowerPC e o Legado Alumínio de 17"
+No início dos anos 2000, a arquitetura RISC PowerPC (desenvolvida pela aliança AIM: Apple, IBM e Motorola) representava o topo do desempenho computacional. Em janeiro de 2003, a Apple revolucionou o mercado de portáteis ao introduzir a linha baseada em alumínio aeronáutico, destacando-se o imponente **PowerBook G4 de 17 polegadas** (resoluções de 1440x900 a 1680x1050 de alta densidade). 
+
+Promovido na época como o primeiro notebook de 17 polegadas do mundo, ele trazia inovações revolucionárias para a engenharia de hardware, como teclado retroiluminado por sensores de luz ambiente, portas FireWire 800 e conectividade sem fio AirPort Extreme embutida. Contudo, em 2006, a transição para processadores Intel encerrou essa linhagem, deixando esse gigante de engenharia estagnado no antigo Mac OS X 10.5 (Leopard).
+
 ### A Motivação da Restauração
-Restaurar um PowerBook G4 em pleno ano de 2026 vai muito além da nostalgia; é um manifesto de **preservação digital, soberania tecnológica e sustentabilidade (Green IT)**. 
-* **Preservação de Hardware:** Evitar que máquinas com engenharia excepcional virem lixo eletrônico.
-* **Desafio de Engenharia:** Superar as barreiras de um ecossistema cujo suporte oficial foi descontinuado há quase duas décadas.
-* **Segurança e Atualidade:** Trazer o hardware de volta à vida com um Kernel Linux moderno, permitindo o uso prático de ferramentas de rede, terminal e a interface gráfica MATE estável.
+Restaurar este PowerBook G4 Alumínio de 17" em pleno ano de 2026 vai muito além da nostalgia; é um manifesto de **preservação digital, soberania tecnológica e sustentabilidade (Green IT)**:
+* **Preservação de Hardware Histórico:** Manter operacional uma estação de trabalho que foi um marco de engenharia móvel, evitando o descarte de uma carcaça de alumínio intacta e uma tela profissional de grandes proporções.
+* **Superação de Gargalos de Hardware Legado:** Contornar a degradação física de drives ópticos (SuperDrive) e o suporte complexo de boot por USB através do barramento OpenFirmware.
+* **Habilitação de Gráficos e Periféricos Dedicados:** A arquitetura de 17 polegadas carrega chips gráficos potentes para a época (como as famílias NVIDIA GeForce4 Go / FX Go5200 ou ATI Mobility Radeon 9600/9700). Trazer o ecossistema moderno do Debian MATE exige a correta injeção de firmwares proprietários (`non-free-firmware`) mapeados via rede, permitindo que a GPU seja reativada com aceleração nativa e sem travamentos.
+
+
+### A Motivação da Restauração
+### Restaurar um PowerBook G4 em pleno ano de 2026 vai muito além da nostalgia; é um manifesto de ### **preservação digital, soberania tecnológica e sustentabilidade (Green IT)**. 
+### * **Preservação de Hardware:** Evitar que máquinas com engenharia excepcional virem lixo eletrônico.
+### * **Desafio de Engenharia:** Superar as barreiras de um ecossistema cujo suporte oficial foi descontinuado há quase duas décadas.
+### * **Segurança e Atualidade:** Trazer o hardware de volta à vida com um Kernel Linux moderno, permitindo o uso prático de ferramentas de rede, terminal e a interface gráfica MATE estável.
 
 ---
 
