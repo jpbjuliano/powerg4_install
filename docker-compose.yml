@@ -1,0 +1,23 @@
+services:
+  # Servidor DHCP e TFTP utilizando imagem oficial do Alpine Linux
+  pxe-tftp:
+    image: alpine:latest
+    container_name: powerg4-pxe-tftp
+    restart: unless-stopped
+    cap_add:
+      - NET_ADMIN
+    network_mode: "host"
+    volumes:
+      - ./config/dnsmasq.conf:/etc/dnsmasq.conf:ro
+      - ./www/debian-powerpc:/var/lib/tftpboot:ro
+    # O comando abaixo instala o dnsmasq dinamicamente e o executa em primeiro plano
+    command: sh -c "apk add --no-cache dnsmasq && exec dnsmasq --keep-in-foreground"
+
+  # Servidor Web utilizando imagem oficial e estável do Nginx
+  web-server:
+    image: nginx:alpine
+    container_name: powerg4-web-server
+    restart: unless-stopped
+    network_mode: "host"
+    volumes:
+      - ./www:/usr/share/nginx/html:ro
